@@ -7,6 +7,7 @@ monitor.filter_by(subsystem='usb')
 for device in iter(monitor.poll, None):
     if device.action == 'add':
         print('{} connected'.format(device))
+        print("send_data")
 
 
 
